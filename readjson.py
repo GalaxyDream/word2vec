@@ -28,7 +28,7 @@ def ParseHpv(TopDir):
 
 #extract all the JSON files in directory "hpvtest" and sanitize it so that it could be appropriate for word2vec model training
 if __name__ == '__main__':	
-	txt = ParseHpv('./hpvtest/')
+	txt = ParseHpv('../hpvtest/')
 	txt = common.sanitize_text(txt)
 
 	RawText = open('rawtext.txt','w+')
